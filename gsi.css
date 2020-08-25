@@ -4,7 +4,7 @@ body, html {
 
 #page {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 14pt;
     height: 100%;
     background-image: url("bg.jpg");
     background-position: center;
@@ -15,25 +15,33 @@ body, html {
 #centered {
     position: fixed;
     text-align: center;
-  }
-ul {
-    list-style-type: none;
-}
-
-li {
-    background-color: whitesmoke;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-
-li:hover {
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-}
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 5px;
+  }
 
 a {
     text-decoration: none;
-    color: gray;
+    color: black;
+    display: inline-block;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+a:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+#cr {
+    position: fixed;
+    text-align: left;
+    bottom: 5px;
+    left: 25%;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 5px;
 }
