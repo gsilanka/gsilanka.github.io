@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    $("#d1").load("gsi.txt", "data", function (response, status, request) {
-        this;
-    });
+    $.post("gsi.json", "",
+        function (data, textStatus, jqXHR) {
+            $("#d1").text(data.menu.id);
+        },
+        "json"
+    );
 });
